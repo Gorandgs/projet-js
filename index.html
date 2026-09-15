@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Mon Gestionnaire de Celebrity Crush</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>
+                    Mon Gestionnaire de Celebrity Crush
+                </h1>
+                <p> Gérez vos Celebrity Crush préférées </p>
+            </header>
+
+            <section>
+                    <h2> Ajouter une Celebrity Crush </h2>
+                    <form 
+                        onsubmit = "mettreAJourInfosCrush()" 
+                        id="formulaire-crush"
+                    >
+                        <label for="champ-nom">Nom :</label>
+                        <input 
+                            type="text" 
+                            id="champ-nom" 
+                            placeholder="Nom" required 
+                        />
+                        <label for="champ-prenom">Prénom :</label>
+                        <input 
+                            type="text" 
+                            id="champ-prenom" 
+                            placeholder="Prénom" required 
+                        />
+                        <label for="champ-age">Âge :</label>
+                        <input 
+                            type="number" 
+                            id="champ-age" 
+                            placeholder="Âge" required 
+                        />
+                        <label for="champ-nationalite">Nationalité :</label>
+                        <input 
+                            type="text" 
+                            id="champ-nationalite" 
+                            placeholder="Nationalité" required 
+                        />
+                        <label for="champ-note">Note :</label>
+                        <input 
+                            type="text" 
+                            id="champ-note" 
+                            placeholder="Note" required 
+                        />
+                        <button 
+                            type="submit">Ajouter
+                        </button>
+                    </form>
+            </section>
+
+            <section>
+                <article>
+                    <h2>
+                        Aperçu de vos Celebrity Crush
+                    </h2>
+                <h3 id="nom-prénom-crush">
+                </h3>
+                <p id="age-nationalité-crush">
+                </p>
+                <span id="note-crush">
+                </span>
+                </article>                  
+            </section>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
