@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
         <title> Mon Gestionnaire de Celebrity Crush</title>
     </head>
     <body>
@@ -17,7 +18,7 @@
             <section>
                     <h2> Ajouter une Celebrity Crush </h2>
                     <form 
-                        onsubmit = "mettreAJourInfosCrush()" 
+                        onsubmit = "ajouterCrush(event)" 
                         id="formulaire-crush"
                     >
                         <label for="champ-nom">Nom :</label>
@@ -46,28 +47,27 @@
                         />
                         <label for="champ-note">Note :</label>
                         <input 
-                            type="text" 
+                            type="number" 
                             id="champ-note" 
                             placeholder="Note" required 
+                            min="0"
+                            max="10"
+                            step="0.1"
                         />
                         <button 
-                            type="submit">Ajouter
+                            type="submit">AJOUTER
                         </button>
                     </form>
             </section>
 
             <section>
-                <article>
+                <div class="titre-catalogue">
                     <h2>
                         Aperçu de vos Celebrity Crush
                     </h2>
-                <h3 id="nom-prénom-crush">
-                </h3>
-                <p id="age-nationalité-crush">
-                </p>
-                <span id="note-crush">
-                </span>
-                </article>                  
+                    <span id="compteur-crush">0 crush</span>
+                </div>
+                <div id="liste-crush"></div>
             </section>
         </main>
 
