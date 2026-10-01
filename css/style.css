@@ -96,6 +96,11 @@ input {
     font-size: 1rem;
 }
 
+input.champ-invalide {
+    border-color: var(--rouge);
+    outline: 2px solid rgb(196 30 58 / 15%);
+}
+
 button {
     font-size: 1rem;
     font-weight: 700;
@@ -165,6 +170,27 @@ button:hover {
     white-space: nowrap;
 }
 
+.actions-crush {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.actions-crush button {
+    margin-top: 0;
+    padding: 7px 12px;
+    background: transparent;
+    color: var(--rouge);
+    border: 1px solid var(--rouge);
+    font-size: 0.8rem;
+}
+
+.actions-crush button:hover {
+    background: var(--rouge);
+    color: var(--blanc);
+}
+
 .note-crush small {
     color: var(--bordeaux);
     font-size: 0.7rem;
@@ -194,6 +220,19 @@ article span {
     background: var(--rouge);
     color: var(--rouge);
     font-weight: 700;
+}
+
+.message-vide {
+    display: block;
+    margin-top: 8px;
+    color: var(--encre);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 720px) {
+    main {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 @media (max-width: 520px) {
