@@ -61,6 +61,20 @@ header p {
     font-size: 1.1rem;
 }
 
+.bouton-secondaire {
+    margin-top: 4px;
+    padding: 8px 14px;
+    border: 1px solid var(--rouge);
+    background: transparent;
+    color: var(--rouge);
+    font-size: 0.8rem;
+}
+
+.bouton-secondaire:hover {
+    background: var(--rouge);
+    color: var(--blanc);
+}
+
 section {
     padding: 26px;
     background: var(--blanc);
@@ -134,6 +148,66 @@ button:hover {
     white-space: nowrap;
 }
 
+.statistiques-crush {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.statistique-crush {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+    background: var(--fond);
+}
+
+.statistique-crush span {
+    color: var(--bleu-vert);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statistique-crush output {
+    color: var(--rouge);
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.35rem;
+}
+
+.filtres-crush {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8px 12px;
+    margin-bottom: 18px;
+}
+
+.filtres-crush label {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.filtres-crush .champ-recherche {
+    grid-column: 1 / -1;
+}
+
+.filtres-crush input,
+.filtres-crush select {
+    min-width: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--fond);
+    border-radius: 24px;
+    background: var(--fond);
+    color: var(--encre);
+    font: inherit;
+    font-size: 0.85rem;
+}
+
+.filtres-crush input {
+    grid-column: 1 / -1;
+}
+
 #liste-crush {
     display: grid;
     gap: 12px;
@@ -146,6 +220,17 @@ button:hover {
     gap: 20px;
     padding: 16px;
     background: var(--fond);
+}
+
+.infos-crush {
+    min-width: 0;
+}
+
+.date-ajout {
+    display: block;
+    margin-top: 8px;
+    color: var(--bleu-vert);
+    font-size: 0.75rem;
 }
 
 .carte-crush h3 {
@@ -184,6 +269,20 @@ button:hover {
     color: var(--rouge);
     border: 1px solid var(--rouge);
     font-size: 0.8rem;
+}
+
+.actions-crush .bouton-supprimer {
+    margin-top: 0;
+    padding: 7px 12px;
+    border: 1px solid var(--rouge);
+    background: transparent;
+    color: var(--rouge);
+    font-size: 0.75rem;
+}
+
+.actions-crush .bouton-supprimer:hover {
+    background: var(--rouge);
+    color: var(--blanc);
 }
 
 .actions-crush button:hover {
@@ -247,5 +346,24 @@ article span {
     section {
         margin-top: 22px;
         padding: 20px;
+    }
+
+    .titre-catalogue {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .statistiques-crush {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filtres-crush {
+        grid-template-columns: 1fr;
+    }
+
+    .filtres-crush label,
+    .filtres-crush input,
+    .filtres-crush select {
+        grid-column: 1;
     }
 }

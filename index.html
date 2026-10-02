@@ -13,14 +13,14 @@
                     Mon Gestionnaire de Celebrity Crush
                 </h1>
                 <p> Gérez vos Celebrity Crush préférées </p>
+                <button type="button" id="bouton-reinitialiser" class="bouton-secondaire">
+                    Réinitialiser le catalogue
+                </button>
             </header>
 
             <section>
                     <h2> Ajouter une Celebrity Crush </h2>
-                    <form 
-                        onsubmit = "ajouterCrush(event)" 
-                        id="formulaire-crush"
-                    >
+                    <form id="formulaire-crush">
                         <label for="champ-nom">Nom :</label>
                         <input 
                             type="text" 
@@ -73,6 +73,39 @@
                     </h2>
                     <span id="compteur-crush">0 crush</span>
                 </div>
+                <div class="statistiques-crush" aria-label="Statistiques du catalogue">
+                    <article class="statistique-crush">
+                        <span>Résultats</span>
+                        <output id="stat-total">0</output>
+                    </article>
+                    <article class="statistique-crush">
+                        <span>Note moyenne</span>
+                        <output id="stat-note-moyenne">0,0/10</output>
+                    </article>
+                    <article class="statistique-crush">
+                        <span>Âge moyen</span>
+                        <output id="stat-age-moyen">0 ans</output>
+                    </article>
+                    <article class="statistique-crush">
+                        <span>Note max. / min.</span>
+                        <output id="stat-min-max">0,0 / 0,0</output>
+                    </article>
+                </div>
+                <form class="filtres-crush" id="formulaire-filtres" role="search">
+                    <label class="champ-recherche" for="recherche-crush">Rechercher</label>
+                    <input
+                        type="search"
+                        id="recherche-crush"
+                        placeholder="Nom, prénom ou nationalité..."
+                    />
+                    <label for="filtre-categorie">Catégorie</label>
+                    <select id="filtre-categorie">
+                        <option value="toutes">Toutes les catégories</option>
+                        <option value="Coup de cœur">Coup de cœur</option>
+                        <option value="Très apprécié(e)">Très apprécié(e)</option>
+                        <option value="À découvrir">À découvrir</option>
+                    </select>
+                </form>
                 <div id="liste-crush"></div>
             </section>
         </main>
