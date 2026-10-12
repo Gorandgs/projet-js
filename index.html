@@ -13,9 +13,6 @@
                     Mon Gestionnaire de Celebrity Crush
                 </h1>
                 <p> Gérez vos Celebrity Crush préférées </p>
-                <button type="button" id="bouton-reinitialiser" class="bouton-secondaire">
-                    Réinitialiser le catalogue
-                </button>
             </header>
 
             <section>
@@ -98,15 +95,21 @@
                         id="recherche-crush"
                         placeholder="Nom, prénom ou nationalité..."
                     />
-                    <label for="filtre-categorie">Catégorie</label>
                     <select id="filtre-categorie">
                         <option value="toutes">Toutes les catégories</option>
                         <option value="Coup de cœur">Coup de cœur</option>
                         <option value="Très apprécié(e)">Très apprécié(e)</option>
                         <option value="À découvrir">À découvrir</option>
                     </select>
+
+                <button type="button" id="bouton-reinitialiser" class="bouton-secondaire">
+                    Réinitialiser le catalogue
+                </button>
+
                 </form>
+
                 <div id="liste-crush"></div>
+
             </section>
         </main>
 

@@ -3,8 +3,6 @@
 :root {
     --rouge: #C41E3A;
     --bordeaux: #7c1a2c;
-    --sauge: #5f9a8a;
-    --bleu-vert: #045054;
     --encre: #241f22;
     --blanc: #ffffff;
     --fond: #f9f9f9;
@@ -132,6 +130,8 @@ button:hover {
     background: var(--bordeaux);
 }
 
+
+
 .titre-catalogue {
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@ button:hover {
 }
 
 .statistique-crush span {
-    color: var(--bleu-vert);
+    color: var(--encore);
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -194,6 +194,7 @@ button:hover {
 
 .filtres-crush input,
 .filtres-crush select {
+    appearance: base-select;
     min-width: 0;
     padding: 10px 12px;
     border: 1px solid var(--fond);
@@ -203,6 +204,17 @@ button:hover {
     font: inherit;
     font-size: 0.85rem;
 }
+
+.filtres-crush select::picker(select) {
+    padding: 10px 12px;
+    border: 1px solid var(--fond);
+    border-radius: 24px;
+    background: var(--fond);
+    color: var(--encre);
+    font: inherit;
+    font-size: 0.85rem;
+}
+
 
 .filtres-crush input {
     grid-column: 1 / -1;
@@ -229,7 +241,7 @@ button:hover {
 .date-ajout {
     display: block;
     margin-top: 8px;
-    color: var(--bleu-vert);
+    color: var(--encore);
     font-size: 0.75rem;
 }
 
