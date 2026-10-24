@@ -1,0 +1,83 @@
+[
+  {
+    "id": "crush_1",
+    "nom": "Coleman",
+    "prenom": "Zendaya",
+    "age": 29,
+    "nationalite": "Américaine",
+    "note": 9.5,
+    "dateAjout": "2026, 9, 10"
+  },
+  {
+    "id": "crush_2",
+    "nom": "Hemsworth",
+    "prenom": "Chris",
+    "age": 43,
+    "nationalite": "Australien",
+    "note": 5.5,
+    "dateAjout": "2026, 9, 5"
+  },
+  {
+    "id": "crush_3",
+    "nom": "Denimal",
+    "prenom": "Ayrton",
+    "age": 18,
+    "nationalite": "Français",
+    "note": 9,
+    "dateAjout": "2026, 9, 6"
+  },
+  {
+    "id": "crush_4",
+    "nom": "Gosling",
+    "prenom": "Ryan",
+    "age": 45,
+    "nationalite": "Canadien",
+    "note": 7.5,
+    "dateAjout": "2026, 9, 7"
+  },
+  {
+    "id": "crush_5",
+    "nom": "Couster",
+    "prenom": "Louis",
+    "age": 19,
+    "nationalite": "Français",
+    "note": 7.5,
+    "dateAjout": "2026, 9, 8"
+  },
+  {
+    "id": "crush_6",
+    "nom": "Chalamet",
+    "prenom": "Timothée",
+    "age": 30,
+    "nationalite": "Franco-Américain",
+    "note": 6,
+    "dateAjout": "2026, 9, 9"
+  },
+  {
+    "id": "crush_7",
+    "nom": "Pugh",
+    "prenom": "Florence",
+    "age": 30,
+    "nationalite": "Britannique",
+    "note": 6,
+    "dateAjout": "2026, 10, 10"
+  },
+  {
+    "id": "crush_8",
+    "nom": "Holland",
+    "prenom": "Tom",
+    "age": 30,
+    "nationalite": "Britannique",
+    "note": 10,
+    "dateAjout": "2026, 10, 11"
+  },
+  {
+    "id": "crush_9",
+    "nom": "Pattinson",
+    "prenom": "Robert",
+    "age": 40,
+    "nationalite": "Britannique",
+    "note": 8,
+    "dateAjout": "2026, 11, 13"
+  }
+]

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
     --rouge: #C41E3A;
     --bordeaux: #7c1a2c;
@@ -32,7 +31,6 @@ main {
 header {
     text-align: center;
     grid-column: 1 / -1;
-    margin-bottom: 28px;
 }
 
 h1,
@@ -51,10 +49,8 @@ h1 {
     color: var(--rouge);
     font-size: clamp(0.5rem, 2.5vw, 4.5rem);
 }
-
 header p {
     font-weight: 600;
-    margin: 20;
     color: var(--encre);
     font-size: 1.1rem;
 }
@@ -191,7 +187,6 @@ button:hover {
 .filtres-crush .champ-recherche {
     grid-column: 1 / -1;
 }
-
 .filtres-crush input,
 .filtres-crush select {
     appearance: base-select;
